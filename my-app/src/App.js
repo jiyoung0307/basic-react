@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Counter from "./pages/Counter";
 import Input from "./pages/Input";
+import ManyInput from "./pages/ManyInput";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
     <div className="App">
       <nav>
         <Link to="/">Home</Link> | <Link to="/about">About</Link> | {" "}
-        <Link to="/counter">Counter</Link> |{" "}
-        <Link to="/input">Input</Link>
+        <Link to="/counter">Counter</Link> | {" "}
+        <Link to="/input">Input</Link> | <Link to="/manyInput">ManyInput</Link>
 
       </nav>
       <Routes>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/counter" element={<Counter />} />
         <Route path="/input" element={<Input />} />
+        <Route path="/manyInput" element={<ManyInput />} />
       </Routes>
     </div>
   );
